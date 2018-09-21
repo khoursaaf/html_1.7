@@ -1,71 +1,62 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css" />
-  <title>J'achète!</title>
-</head>
-<body>
-  <form method="post">
-    <fieldset class="bloc1">
-      <legend class="legend1">Votre identité.</legend>
-      <p>
-        <div>
-        <label for="Nom">1. Nom :</label>
-        <input type="text" name="Nom" placeholder="Nom">
-      </div>
-      <div>
-        <label for="Prénom">2. Prénom :</label>
-        <input type="text" name="Prénom" placeholder="Prénom">
-      </div>
-      <div>
-        <label for="Adresse Mail">3. Adresse Mail :</label>
-        <input type="email" name="Adresse mail" placeholder="Adresse mail">
-      </div>
-    </p>
-    </fieldset>
-    <fieldset class="bloc2">
-      <legend class="legend2">Adresse de livraison.</legend>
-      <p>
-        <div>
-        <label for="Adresse">1. Adresse :</label>
-        <textarea maxlength="250" name="Adresse" rows="5" cols="25"></textarea>
-      </div>
-      <div>
-        <label for="Code Postal">2. Code Postal :</label>
-        <input type="text" name="Code Postal" maxlength="5" placeholder="Code Postal">
-      </div>
-      <div>
-        <label for="Ville">3. Ville :</label>
-        <input type="text" name="Ville" placeholder="Ville">
-      </div>
-    </p>
-    </fieldset>
-    <fieldset class="bloc3">
-      <legend class="legend3">Information de règlement.</legend>
-      <p>
-        <div>
-        <label>1. Type de carte:</label> <br>
-        <label class="carte1"><input type="radio" name="r1" value="r1">Visa</label><br>
-        <label class="carte1"><input type="radio" name="r1" value="r2">Mastercard</label>
-      </div>
-      <div>
-        <label for="Numéro de carte">2. Numéro de carte:</label>
-        <input type="text" name="Numéro de carte" maxlength="20" placeholder="Numéro de carte">
-      </div>
-      <div>
-        <label for="code de sécurité">3. Code de sécurité:</label>
-        <input type="text" name="code de sécurité" maxlength="3" placeholder="Code de sécurite">
-      </div>
-    </p>
-      <div>
-        <label for="nom du titulaire">4. Nom du titulaire:</label>
-        <input type="text" name="nom du titulaire" placeholder="Nom du titulaire">
-      </div>
-    </fieldset>
-    <div>
-      <input type="submit" name="j'achète" value="J'achète!">
-    </div>
-  </form>
-</body>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form method="post">
+      <fieldset class="bloc1">
+        <legend class="legend1">Votre identité.</legend>
+        <ol>
+          <li>
+            <label for="Nom">Nom :</label>
+            <input type="text" name="Nom" placeholder="Nom"></li>
+            <li><label for="Prénom">Prénom :</label>
+            <input type="text" name="Prénom" placeholder="Prénom"></li>
+            <li><label for="Adresse Mail">Adresse Mail :</label>
+            <input type="email" name="Adresse mail" placeholder="Adresse mail">
+          </li>
+        </ol>
+      </fieldset>
+      <fieldset class="bloc2">
+        <legend class="legend2">Adresse de livraison.</legend>
+          <ol>
+            <li>
+              <label for="Adresse">Adresse :</label>
+              <textarea maxlength="250" name="Adresse" rows="5" cols="25"></textarea>
+            </li>
+            <li>
+              <label for="Code Postal">Code Postal :</label>
+              <input type="text" name="Code Postal" maxlength="5" placeholder="Code Postal">
+            </li>
+            <li>
+              <label for="Ville">Ville :</label>
+              <input type="text" name="Ville" placeholder="Ville">
+            </li>
+          </ol>
+        </fieldset>
+        <fieldset class="bloc3">
+          <legend class="legend3">Information de règlement.</legend>
+            <ol>
+              <li>Type de carte:</li>
+                <label class="carte1"><input type="radio" name="r1" value="r1">Visa</label><br>
+                <label class="carte1"><input type="radio" name="r1" value="r2">Mastercard</label>
+              <li>
+                <label for="Numéro de carte">Numéro de carte:</label>
+                <input type="text" name="Numéro de carte" maxlength="20" placeholder="Numéro de carte">
+              </li>
+              <li>
+                  <label for="code de sécurité">Code de sécurité:</label>
+                  <input type="text" name="code de sécurité" maxlength="3" placeholder="Code de sécurite">
+              </li>
+              <li>
+                <label for="nom du titulaire">Nom du titulaire:</label>
+                <input type="text" name="nom du titulaire" placeholder="Nom du titulaire">
+              </li>
+            </ol>
+          </fieldset>
+           <input type="submit" name="j'achète" value="J'achète!">
+        </form>
+  </body>
 </html>
